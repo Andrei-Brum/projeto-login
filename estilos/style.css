@@ -12,13 +12,11 @@
     margin: 0px;
     box-sizing: border-box;
 }
-
 body, html {
     background-image: linear-gradient(to top, #5f2c82, #49a09d);
     height: 100vh;
     width: 100vw;
 }
-
 main {
     position: relative;
     height: 100vh;
@@ -28,19 +26,16 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
-
     background-color: white;
     width: 250px;
-    height: 470px;
+    height: 515px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
-
+    transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
-
 section#login > div#imagem {
     display: block;
     background: #5f2c82 url(../imagens/pexels-sean-valentine-3260886.jpg) no-repeat;
@@ -48,35 +43,47 @@ section#login > div#imagem {
     background-position: center;
     height: 200px;
 }
-
 section#login > div#formulario {
     display: block;
     padding: 10px;
 }
-
 div#formulario > h1 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
-
 div#formulario > p {
     font-size: 0.8em;
 }
-
 form > div.campo {
     background-color: #9960be;
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
-
 }
-
 div.campo > label {
     display: none;
 }
-
+div.campo > i {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+div.campo > input {
+    background-color: #6cd3cf;
+    font-size: 1em;
+    width: calc(100% - 60px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-11.4px);
+    }
+div.campo >input:focus-within {
+    background-color: white;
+}
 form > input[type=submit] {
     display: block;
     font-size: 1em;
@@ -89,12 +96,10 @@ form > input[type=submit] {
     border-radius: 5px;
     cursor: pointer;
 }
-
 form > input[type=submit]:hover {
     background-image: linear-gradient(to top, #49a09d, #5f2c82);
     color: white;
 }
-
 form > a.botao {
     display: block;
     text-align: center;
@@ -109,13 +114,11 @@ form > a.botao {
     border-radius: 7px;
     text-decoration: none;
 }
-
 form > a.botao:hover {
     background-image: linear-gradient(to top, #49a09d, #5f2c82);
     color: white;
     padding: 10px;
 }
-
 form > a.botao > i {
     font-size: 0.8em;
 }
